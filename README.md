@@ -1,4 +1,4 @@
-# Flux Terraform module
+# Cassandra Terraform module
 Terraform module to deploy cassandra in k8s cluster on GCP using helm [chart]
 
 ## Install with specific cluster size
@@ -6,8 +6,8 @@ By default, cassandra will be created with 3 nodes. If you want to change the cl
 
 
 ## Install with specific resource size
-By default, this Chart will create a cassandra with CPU 2 vCPU and 4Gi of memory which is suitable for development environment.
-If you want to use this Chart for production, I would recommend to update the CPU to 4 vCPU and 16Gi. Also increase size of `max_heap_size` and `heap_new_size`.
+By default, it will create a cassandra with CPU 2 vCPU and 4Gi of memory which is suitable for development environment.
+If you want to use it for production, I would recommend to update the CPU to 4 vCPU and 16Gi. Also increase size of `max_heap_size` and `heap_new_size`.
 To update the settings, edit `values.yaml`
 
 ## Install with specific node
